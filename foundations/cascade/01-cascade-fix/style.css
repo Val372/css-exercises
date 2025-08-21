@@ -8,32 +8,39 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+p.small-para {
   font-size: 14px;
   font-weight: 800;
 }
+
+/* p hinzugefügt, damit dieser Selektor wichtiger ist, man könnte auch weiter nach unten verschieben, der zweite Satz wird kleiner*/
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
+  border: 1px solid black;
 }
+/* habe noch einen Rahmen hinzugefügt */ 
 
-.child {
+.confirm.button {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+/* damit Button grün wird muss .button hinzu */
+
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
+
+/* .text davor schreiben oder die Position ändern, dadurch wird letzter Satz kleiner */
 
 div.text {
   color: rgb(0, 0, 0);
